@@ -70,7 +70,7 @@
                     </p>
                     <div class="hero-ctas">
                         <a href="#projects" class="btn btn-primary">View Projects <i class="fas fa-arrow-right"></i></a>
-                        <a href="#contact" class="btn btn-secondary">Let's Talk</a>
+                        <button class="btn btn-secondary" id="btn-request-resume">Get Resume <i class="fas fa-file-arrow-down"></i></button>
                     </div>
                     <div class="social-links">
                         <a href="https://github.com/Anushree-112005" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -101,7 +101,7 @@
                     <div class="about-info reveal">
                         <h3 class="about-subtitle">Professional Summary</h3>
                         <p class="about-text">
-                            I am a third-year Computer Science Engineering student with strong problem-solving skills and hands-on experience in full-stack development, AI-based applications, and real-time tracking systems. I love bridging the gap between clean frontend user interfaces and robust backend logic.
+                            I am a final-year Computer Science Engineering student with strong problem-solving skills and hands-on experience in full-stack development, AI-based applications, and real-time tracking systems. I love bridging the gap between clean frontend user interfaces and robust backend logic.
                         </p>
                         <p class="about-text">
                             Passionate about building innovative technology solutions, I continuously learn modern tools and software development frameworks. I aim to apply my engineering principles to build robust, scalable applications.
@@ -540,14 +540,6 @@
                             </div>
 
                             <div class="contact-item">
-                                <div class="item-icon"><i class="fas fa-phone"></i></div>
-                                <div class="item-text">
-                                    <span class="item-label">Call Me</span>
-                                    <a href="tel:8122660083" class="item-val">+91 8122660083</a>
-                                </div>
-                            </div>
-
-                            <div class="contact-item">
                                 <div class="item-icon"><i class="fas fa-location-dot"></i></div>
                                 <div class="item-text">
                                     <span class="item-label">Location</span>
@@ -602,6 +594,28 @@
             </a>
         </div>
     </footer>
+
+    <!-- Resume Modal -->
+    <div id="resume-modal" class="modal" aria-hidden="true" role="dialog" aria-labelledby="modal-title">
+        <div class="modal-content">
+            <button class="close-modal" id="close-modal" aria-label="Close modal">&times;</button>
+            <div class="modal-header">
+                <div class="modal-icon-wrapper"><i class="fas fa-file-pdf"></i></div>
+                <h3 id="modal-title">Request Resume</h3>
+                <p>To protect privacy and prevent spam, my personal details are restricted. Enter your email below to receive my professional resume in your inbox.</p>
+            </div>
+            <form id="resume-form" class="modal-form">
+                <div class="form-group">
+                    <label for="resume-email">Email Address</label>
+                    <input type="email" id="resume-email" required placeholder="recruiter@company.com">
+                </div>
+                <button type="submit" class="btn btn-primary btn-modal-submit">
+                    Send Resume <i class="fas fa-paper-plane"></i>
+                </button>
+                <div class="form-message-status" id="modal-status"></div>
+            </form>
+        </div>
+    </div>
 
     <!-- Custom JS -->
     <script src="script.js"></script>
