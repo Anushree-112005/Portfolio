@@ -5,7 +5,7 @@ This portfolio showcases my skills, projects, certifications, and contact inform
 
 ## 🚀 Live Demo
 
-🔗 [View Portfolio Here]https://anushreess-portfolio.netlify.app/
+🔗 https://anushreessportfolio.netlify.app/
 
 ## 📌 Features
 
